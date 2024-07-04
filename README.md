@@ -1,0 +1,2 @@
+# HexoAutoDeploy
+这是使用python+pyqt6简单实现的一个自动一键上传.md文件到服务器并部署hexo博客并备份到github私人仓库的简单图形界面。
