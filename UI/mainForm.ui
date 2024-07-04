@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
   <property name="windowTitle">
    <string>hexo博客一键部署工具</string>
   </property>
@@ -109,9 +109,9 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="deployButton">
+          <widget class="QPushButton" name="uploadButton">
            <property name="text">
-            <string>一键部署</string>
+            <string>一键上传</string>
            </property>
           </widget>
          </item>
@@ -129,9 +129,9 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="backupButton">
+          <widget class="QPushButton" name="deployButton">
            <property name="text">
-            <string>一键备份</string>
+            <string>一键部署</string>
            </property>
           </widget>
          </item>
@@ -149,9 +149,9 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="uploadButton">
+          <widget class="QPushButton" name="backupButton">
            <property name="text">
-            <string>一键上传</string>
+            <string>一键备份</string>
            </property>
           </widget>
          </item>

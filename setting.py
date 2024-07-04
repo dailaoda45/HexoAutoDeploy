@@ -1,7 +1,7 @@
 # 主机账号密码
 host = '8.8.8.8'
 user = 'root'
-password = 'xxxxxxxxxxx'
+password = '.'
 # 超时响应时间
 timeout = 10
 

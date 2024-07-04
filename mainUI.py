@@ -11,9 +11,11 @@ import os
 class window(QWidget):
     def __init__(self):
         super().__init__()
-        # use the Ui_login_form
-        self.ui = Ui_MainForm()
-        self.ui.setupUi(self)
+
+        # use the Ui_login_form.py
+        # self.ui = Ui_Form()
+        self.ui = uic.loadUi(r'D:\pyve\HexoAutoDeploy\UI\mainpage.ui', self)
+        # self.ui.setupUi(self)
 
         # show the login window
         self.show()
