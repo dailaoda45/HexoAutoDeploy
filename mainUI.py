@@ -7,6 +7,7 @@ from pathlib import Path
 import paramiko
 import os
 
+# main.py的导入UI文件版本
 
 class window(QWidget):
     def __init__(self):

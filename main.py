@@ -91,7 +91,7 @@ class window(QWidget):
     def browse(self):
         filenames, _ = QFileDialog.getOpenFileNames(
             self,
-            "Select Files",r"C:\Users\SS\Desktop","Markdown (*.md *)"
+            "选择要上传的md文件",r"C:\Users\SS\Desktop","Markdown (*.md)"
         )
         if filenames:
             self.ui.upload_list.addItems([str(Path(filename)) for filename in filenames])
