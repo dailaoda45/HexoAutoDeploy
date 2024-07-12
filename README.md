@@ -45,3 +45,8 @@ server_path = r'/opt/blog/hexoblog/source/_posts/'
 
 
 
+20240713
+
+完成备份任务，部署任务多线程运行。
+
+完成部署，备份，删除交互提醒窗口。
