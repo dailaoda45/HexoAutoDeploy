@@ -137,19 +137,24 @@ class settingForm(QWidget):
         print(self.ui.host.text(),self.ui.user.text(),self.ui.password.text(),self.ui.overtime.text(),self.ui.uploadpath.text())
     #     检查加密文件以及秘钥是否存在
         appdata_path=os.getenv('APPDATA')
+
+
         if appdata_path is None:
             print("无法获取APPDATA环境变量")
             return
         key_path = os.path.join(appdata_path, 'Hexomanage', 'secret.key')
 
+        # 确保目录存在
+        os.makedirs(os.path.dirname(key_path), exist_ok=True)
+
         if os.path.exists(key_path):
             # 加载秘钥
-            print(1)
+            print(key_path)
             with open(key_path, 'rb') as key_file:
                 key = key_file.read()
         else:
             # 创建秘钥
-            print(2)
+            print(key_path)
             key = Fernet.generate_key()
             with open(key_path, 'wb') as key_file:
                 key_file.write(key)
